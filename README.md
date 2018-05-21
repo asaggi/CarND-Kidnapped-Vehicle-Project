@@ -22,10 +22,24 @@ Alternatively some scripts have been included to streamline this process, these 
 
 Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
 
+---
+
+#### After starting the emulator, we get the screen :
+
+![Start](https://github.com/asaggi/CarND-Kidnapped-Vehicle-Project/blob/master/data/Screen_Shot-I.png)
+
+---
+#### During runtime, we get :
+
+![Running](https://github.com/asaggi/CarND-Kidnapped-Vehicle-Project/blob/master/data/Screen_Shot-II.png)
+ 
+---
 I modified these 2 files for this project: are src/particle_filter.cpp, and particle_filter.h
 and ran the code until I got - `Success! Your particle filter passed!`
 
+![Success](https://github.com/asaggi/CarND-Kidnapped-Vehicle-Project/blob/master/data/Screen_Shot-IV.png)
 
+---
 # Implementing the Particle Filter
 
 The `Particle Filter` is implemented in `src/particle_filter.cpp`:
@@ -44,6 +58,8 @@ Almost the rest of the magic happens on src/main.cpp. The event handler declared
 1. x position
 2. y position
 3. landmark id
+
+
 
 
 
