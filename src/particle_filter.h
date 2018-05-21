@@ -10,6 +10,7 @@
 #define PARTICLE_FILTER_H_
 
 #include "helper_functions.h"
+#include <random>
 
 struct Particle {
 
@@ -30,6 +31,7 @@ class ParticleFilter {
 	// Number of particles to draw
 	int num_particles; 
 	
+	std::default_random_engine gen;
 	
 	
 	// Flag, if filter is initialized
@@ -45,7 +47,7 @@ public:
 
 	// Constructor
 	// @param num_particles Number of particles
-	ParticleFilter() : num_particles(0), is_initialized(false) {}
+	ParticleFilter() : num_particles(0), is_initialized(false), EPS (0.00001) {}
 
 	// Destructor
 	~ParticleFilter() {}
@@ -109,6 +111,7 @@ public:
 	std::string getSenseX(Particle best);
 	std::string getSenseY(Particle best);
 
+	const double EPS;
 	/**
 	* initialized Returns whether particle filter is initialized yet or not.
 	*/
